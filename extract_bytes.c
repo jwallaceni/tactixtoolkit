@@ -1,5 +1,5 @@
 /*
-  Extract opcodes from the .text section of a disassembled binary and format into \x (Hex/C style) shellcode
+  Extract opcodes from the .text section of a disassembled binary and format into \xHH (Hex/C style) shellcode
   
   Examples:
   
