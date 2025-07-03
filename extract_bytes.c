@@ -19,7 +19,7 @@
 
     \x55\x89\xe5\x83\xec\x08
 
-    Compile with: gcc extract_bytes.c -o extract_bytes
+  Compile with: gcc extract_bytes.c -o extract_bytes
 */
 
 #include <stdio.h>
