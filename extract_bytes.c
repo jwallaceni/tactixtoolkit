@@ -1,8 +1,12 @@
 /*
-  Extract opcodes from the .text section of a disassembled binary and format into \x (hex, C-Style) shellcode
+  Extract opcodes from the .text section of a disassembled binary and format into \x (Hex/C style) shellcode
+  
   Examples:
+  
     objdump -D mimikatz.exe | ./extract_bytes
-    objdump -D mimikatz.exe > mimikatz.txt; ./extract_bytes mimikatz.txt
+    
+    objdump -D mimikatz.exe > mimikatz.txt
+    ./extract_bytes mimikatz.txt
 
     Given this objdump output:
 
@@ -14,6 +18,8 @@
     Outputs:
 
     \x55\x89\xe5\x83\xec\x08
+
+    Compile with: gcc extract_bytes.c -o extract_bytes
 */
 
 #include <stdio.h>
