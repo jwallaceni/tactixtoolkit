@@ -3,6 +3,17 @@
   Examples:
     objdump -D mimikatz.exe | ./extract_bytes
     objdump -D mimikatz.exe > mimikatz.txt; ./extract_bytes mimikatz.txt
+
+    Given this objdump output:
+
+    08048400 <.text>:
+    8048400: 55                    push   %ebp
+    8048401: 89 e5                 mov    %esp,%ebp
+    8048403: 83 ec 08              sub    $0x8,%esp
+
+    Outputs:
+
+    \x55\x89\xe5\x83\xec\x08
 */
 
 #include <stdio.h>
