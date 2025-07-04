@@ -3,7 +3,8 @@
   
   Examples:
   
-    objdump -D mimikatz.exe | ./extract_bytes
+    objdump -D mimikatz.exe | ./extract_bytes.exe
+    objdump -D mimikatz.exe | ./extract_bytes.exe > shellcode.txt
     
     objdump -D mimikatz.exe > mimikatz.txt
     ./extract_bytes mimikatz.txt
